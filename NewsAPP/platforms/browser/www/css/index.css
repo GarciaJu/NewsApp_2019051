@@ -1,0 +1,101 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+    width:100%;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    overflow: visible;
+    padding: 0px;
+    text-align: center;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+#index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display:block;
+    margin:auto;
+    width: 200px;
+    height: 200px;
+    padding: 10%;
+}
+
+.title {
+    display: inline;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    display: inline;
+}
+
+.article {
+    margin-bottom: 2%;
+}
+
+.description {
+    padding-top: 2%;
+}
+
+.description img {
+    max-width: 150px;
+    margin: 0 8px 2px 0;
+    float: right;
+}
+
+.description div {
+    display: inline;
+}
+
+.datetime {
+    font-size: 12px !important;
+    right: 0;
+    margin: 2px;
+}
+
+.btn-info {
+    margin: 0 0 0 5px !important;
+}
+
+#actionList p {
+    white-space: normal !important;
+}

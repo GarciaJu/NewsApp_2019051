@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <!-- 
+        This page show a bit of information about the application and the developer
+        All information are statically defined here
+    -->
+    <div id="aboutPage" data-role="page">
+
+        <!-- Page header with fixed position and a back button -->
+        <div data-role="header" data-add-back-btn="true">
+            <h1>About</h1>
+            <img src="./img/logo.png" class="ui-btn-right" width="37" />
+        </div>
+
+        <div data-role="content">
+            <img id="aboutAvatar" src="./img/juliana.jpg">
+            <div id="personDetails">
+                <h3>Juliana Garcia Alves</h3>
+                <p>Student ID: 2019051</p>
+            </div>
+            <ul id="actionList" data-role="listview" data-inset="true">
+                <li>
+                    <h3>News App</h3>
+                    <p>This is a smart news application that organizes what's happening in the world to help you learn more about the stories that matter to you.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page footer with fixed position -->
+        <div data-role="footer" data-position="fixed">
+            <h4>© News App by Juliana - 2019051</h4>
+        </div>
+    </div>
+</body>
+
+</html>

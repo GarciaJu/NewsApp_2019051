@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <title>News App</title>
+        <!-- CSS imports -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css" />
+    </head>
+    <body>
+        <!-- First Page -->
+        <div data-role="page" id="index">
+            <div>
+                <h1>Welcome to News App!</h1>
+                <img class="logo" src="./img/logo.png" />
+                <h1 id="date"></h1>
+                <h1 id="time"></h1>
+            </div>
+
+            <!-- Page footer with fixed position -->
+            <div data-role="footer" data-position="fixed">
+                <h4>© News App by Juliana - 2019051</h4>
+            </div>
+        </div>
+
+        <!--
+            Javacript and CSS are loaded only once, there no need to load on each page 
+            since the PhoneGap will build a single page
+        -->
+        <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.mobile.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/storage.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/news.js"></script>
+        <script type="text/javascript" src="js/favourites.js"></script>
+    </body>
+</html>

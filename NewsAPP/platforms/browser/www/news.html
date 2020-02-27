@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <!-- Page to display the news -->
+    <div id="newsPage" data-role="page">
+
+        <!-- Page header with fixed position -->
+        <div data-role="header" data-position="fixed">
+            <img src="./img/logo.png" class="ui-btn-left" width="37" />
+            <h1>News</h1>
+            <!-- Button to show the favourites news -->
+            <button onclick="gotoFavouritePage()" data-icon="star" class="ui-btn-right">Favourites</button>
+        </div>
+
+        <div id="news" data-role="content">
+            <!-- content -->
+        </div>
+
+        <!-- Page footer with fixed position -->
+        <div data-role="footer" data-position="fixed" class="ui-nodisc-icon ui-alt-icon">
+            <h4>
+                © News App by Juliana - 2019051
+                <!-- Button to show the app's info -->
+                <button onclick="gotoInfoPage()" class="ui-btn ui-shadow ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline btn-info">info</button>
+            </h4>
+        </div>
+    </div>
+</body>
+
+</html>
